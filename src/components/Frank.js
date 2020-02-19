@@ -1,12 +1,14 @@
 import React from 'react';
-import Health from './Health';
+import Score from './Score';
+import Time from './Time'
 
 function Frank(){
   return(
     <div>
       <p>Hey, I'm Frank</p>
        <span style={{fontSize:'100px'}}>🧟‍♂️</span>
-       <Health />
+       <Time/>
+       <Score />
     </div>
   )
 }
