@@ -1,0 +1,11 @@
+.header{
+  background: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 100%;
+  font-family: Nosifer, cursive;
+  color: #BD0000;
+  text-align: center;
+  text-shadow: 5px 3px 5px black;
+  margin-top: -8px;
+}
+@import url(https://fonts.googleapis.com/css?family=Nosifer&display=swap);
