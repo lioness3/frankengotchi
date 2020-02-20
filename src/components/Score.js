@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import PropTypes from "prop-types";
 
 import './Score.css';
 function Score(props){
   let [health, setHealth] = useState(10);
   let [sleep, setSleep] = useState(10);
-  let btnColor = "green"
-  let [color, setColor] = useState('green');
+  let btnColor = ["yellow","red"]
+  let [color, setColor] = useState("red");
 
   let healthCountDown = () => {
 
@@ -18,13 +18,14 @@ function Score(props){
 
 healthCountDown()
 
+console.log(btnColor[1]);
   return(
     <div className='healthBox'>
     <h1> Score Nonsense</h1>
 
 
     <h1> <span style={{backgroundColor:color}}>Health Meter:{health}</span> </h1>
-    <h1> Sleep Meter:{sleep} <button onClick={() => setSleep(sleep + 5)}  > Level UP </button></h1>
+    <h1> Sleep Meter:{sleep} <button onClick= {() => setColor("blue")}  > Level UP </button></h1>
 
     </div>
   )
