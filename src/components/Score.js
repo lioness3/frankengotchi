@@ -18,14 +18,21 @@ function Score(props){
 
 healthCountDown()
 
-console.log(btnColor[1]);
+let toggle = ()=>{
+  if (color === "red")
+  return color = "purple"
+
+if(color === "purple")
+  return color = "red"
+
+}
   return(
     <div className='healthBox'>
     <h1> Score Nonsense</h1>
 
 
     <h1> <span style={{backgroundColor:color}}>Health Meter:{health}</span> </h1>
-    <h1> Sleep Meter:{sleep} <button onClick= {() => setColor("blue")}  > Level UP </button></h1>
+    <h1> Sleep Meter:{sleep} <button onClick= {() => setColor(toggle)}  > Level UP </button></h1>
 
     </div>
   )
