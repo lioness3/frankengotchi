@@ -1,0 +1,19 @@
+.frank{
+font-size: 500px;
+}
+.gear{
+
+  font-size: 50px;
+
+}
+.frank:hover .gear{
+  display:inline-block;
+ position:absolute;
+z-index: 5;
+ left:100px;
+ top:300px;
+
+}
+.frank:hover{
+  filter:hue-rotate(30deg);
+}
